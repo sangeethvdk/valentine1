@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+    <img src="https://picsum.photos/1600/900" class="bg-image">
+
+    <div class="center-content">
+        <h1 class="neon">Happy Valentine's Day</h1>
+        <h2 class="handwriting">Bobby</h2>
+        <p class="small-text">It's for you</p>
+        <button class="btn" onclick="nextPage(2)">Click Here to Go 💌</button>
+    </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+    <h1 class="neon small">Happy Valentine's Day</h1>
+    <h2 class="handwriting small-hand">Bobby</h2>
+
+    <p class="love-text">
+        From the moment you came into my life, everything changed in the most beautiful way.
+        You became my happiness, my comfort, and my favorite person in this world.
+        These three years with you have been filled with unforgettable memories,
+        laughter, understanding, and unconditional love.
+        Your smile brightens my darkest days, and your presence makes everything feel complete.
+        Loving you is not just a feeling — it’s my greatest blessing.
+        I don’t just want today with you, I want every tomorrow,
+        every dream, and every forever with you.
+    </p>
+
+    <button class="btn" onclick="nextPage(3)">Continue Our Journey ❤️</button>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page">
+    <h1 class="journey">Three Years of Our Journey</h1>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/300?1" onclick="openModal(this, 'The day I realized you are my forever.')">
+        <img src="https://picsum.photos/300?2" onclick="openModal(this, 'Your smile is my favorite place.')">
+        <img src="https://picsum.photos/300?3" onclick="openModal(this, 'Every memory with you is magic.')">
+        <img src="https://picsum.photos/300?4" onclick="openModal(this, 'Holding your hand feels like home.')">
+        <img src="https://picsum.photos/300?5" onclick="openModal(this, 'Three years, countless memories.')">
+        <img src="https://picsum.photos/300?6" onclick="openModal(this, 'You are my heart’s safest place.')">
+        <img src="https://picsum.photos/300?7" onclick="openModal(this, 'With you, every day feels special.')">
+        <img src="https://picsum.photos/300?8" onclick="openModal(this, 'Our story is my favorite story.')">
+        <img src="https://picsum.photos/300?9" onclick="openModal(this, 'Forever starts with you.')">
+        <img src="https://picsum.photos/300?10" onclick="openModal(this, 'Still choosing you every single day.')">
+    </div>
+
+    <p class="final-text">
+        No matter where life takes us, my heart will always belong to you.  
+        Forever your Bobby ❤️
+    </p>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImg">
+    <p id="caption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
