@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* PAGE SYSTEM */
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* HERO */
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+.center-content {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.neon {
+    font-size: 60px;
+    color: #ff4da6;
+    text-shadow: 0 0 10px #ff4da6,
+                 0 0 20px #ff1a75,
+                 0 0 40px #ff1a75;
+}
+
+.handwriting {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+}
+
+.small { font-size: 35px; }
+.small-hand { font-size: 30px; }
+
+.small-text { font-size: 18px; }
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff1a75;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* PAGE 2 */
+.love-text {
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.8;
+}
+
+/* PAGE 3 */
+.journey {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.final-text {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.9);
+    padding-top:50px;
+    text-align:center;
+}
+
+.modal img {
+    max-width: 80%;
+}
+
+.close {
+    position:absolute;
+    top:20px;
+    right:40px;
+    font-size:40px;
+    cursor:pointer;
+}
